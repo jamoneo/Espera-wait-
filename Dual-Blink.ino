@@ -3,14 +3,13 @@ TEspera TRfsh,TCambio;
 bool cambio=false;
 void setup() {
  pinMode(LED_BUILTIN, OUTPUT);
- TRfsh.set(500);
- TCambio.set(3000);
+ TRfsh.set(100);
+ TCambio.set(1000);
 }
 
 void loop() {
 if(TRfsh.done(true))    digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));
-if(TCambio.done(true))  {cambio=!cambio;
-                         if(cambio) TRfsh.set(500); 
-                         else TRfsh.set(100);
+if(TCambio.done(true))  {cambio^=1;
+                         TRfsh.set(cambio*100+50); 
                          }
 }
