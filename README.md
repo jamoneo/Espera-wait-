@@ -12,6 +12,7 @@ Funciones:
    void reset(); //Reinicia temporizado con el ultimo el tiempo preficado
 
 Ejemplo:
+
     T1.set(5000); // Inicia el temporizador a 5 seg
     T2.set(10000); // Inicia el temporizador a 10 seg
     T3.set(50000); // Inicia el temporizador a 50 seg
