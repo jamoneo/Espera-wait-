@@ -7,9 +7,10 @@ Igualmente se podrá reprogramar el tiempo en cualquier momento, pudiendo realiz
 incrementos de tiempo sucesivos.
 
 Funciones:
-   boolean done(bool op=false); //indica si se cumplio el tiempo. Con op=true el temporizdo se reinicia automáticamente
-   void set(int espera);  //Reinicia el temporizador con el valor de tiempo para la siguiente espera
-   void reset(); //Reinicia temporizado con el ultimo el tiempo preficado
+
+    boolean done(bool op=false); //indica si se cumplio el tiempo. Con op=true el temporizdo se reinicia automáticamente
+    void set(int espera);  //Reinicia el temporizador con el valor de tiempo para la siguiente espera
+    void reset(); //Reinicia temporizado con el ultimo el tiempo preficado
 
 Ejemplo:
 
