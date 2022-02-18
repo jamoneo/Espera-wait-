@@ -16,7 +16,9 @@ Ejemplo:
     T1.set(5000); // Inicia el temporizador a 5 seg
     T2.set(10000); // Inicia el temporizador a 10 seg
     T3.set(50000); // Inicia el temporizador a 50 seg
+ do{   
     if(T1.done()) Serial.print("T1 cumplido");  //envia un mensaje solo una vez, cuando se cumple el tiempo= 5eg
     if(T2.done(true)) Serial.print"T2 cumplido); //Envia el mensaje cada 10 seg
     if(T3.done(true)) {Serial.print"T2 cumplido); //Mensaje cada 50 seg
                       T1.reset(); } //reinicia el T1 a los 50 segundos, con lo que el mensaje de t1 sucede cada 60 seg
+}While(1);
