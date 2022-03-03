@@ -22,14 +22,14 @@ class TEspera
 
  private:
        unsigned long Tsec;
-       int Tespera; //tiempo almacenado
+       unsigned int Tespera; //tiempo almacenado
        boolean fdone=true; //marca tiempo finalizado, para no tener que comprobar el tiempo despues de que se cumpla
  
 public:
    
    TEspera(){}; //constructor para servo. indicamos el las salidas del servo
    boolean done(bool op=false);
-   void set(int espera);
+   void set(unsigned int espera);
    void reset(); //Reinicia el tiempo preficado anteriormente
 
 	};
