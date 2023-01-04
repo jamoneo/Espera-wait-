@@ -9,7 +9,7 @@
 #include "Espera.h"
 
 //asigna el valor tiempo de espera a lavariable tsec
-void TEspera::set(unsigned int espera)
+void TEspera::set(unsigned long espera)
 { Tsec=millis()+espera;
 Tespera=espera; //alamacena el tiempo fijado
   fdone=false;
@@ -20,9 +20,9 @@ Tespera=espera; //alamacena el tiempo fijado
 boolean TEspera::done(bool op)
 {  if (!fdone) 
         if(Tsec<millis()) {fdone=true;
-                                 if (op) reset(); 
-                                 return true;}
-  return false;
+                           if (op) reset(); 
+                           return true;}
+  return fdone;
 }
 
 void TEspera::reset(void)
